@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Bowling_Card_DialogBox_Controller">
+    <content>
+        <AnchorPane prefHeight="599.0" prefWidth="886.0">
+            <children>
+                <VBox layoutX="24.0" layoutY="81.0" prefHeight="518.0" prefWidth="865.0" spacing="15.0">
+                    <children>
+                        <TableView fx:id="Bowling_Card_Tableview" prefHeight="418.0" prefWidth="882.0">
+                            <columns>
+                                <TableColumn fx:id="Bowler_Col" prefWidth="264.7999515533447" style="-fx-alignment: CENTER;" text="BOWLER" />
+                                <TableColumn fx:id="Over_Bowled_Col" prefWidth="138.4000244140625" style="-fx-alignment: CENTER;" text="OVER BOWLED" />
+                                <TableColumn fx:id="Maiden_Col" prefWidth="84.79998779296875" style="-fx-alignment: CENTER;" text="MAIDEN" />
+                                <TableColumn fx:id="Wicket_Taken_Col" minWidth="0.0" prefWidth="123.99993896484375" style="-fx-alignment: CENTER;" text="WICKET TAKEN" />
+                                <TableColumn fx:id="Run_Given_Col" minWidth="0.0" prefWidth="124.00006103515625" style="-fx-alignment: CENTER;" text="RUN_GIVEN " />
+                        <TableColumn fx:id="Economy_Col" minWidth="0.0" prefWidth="131.19989013671875" style="-fx-alignment: CENTER;" text="ECONOMY" />
+                            </columns>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                        </TableView>
+                        <HBox prefHeight="87.0" prefWidth="882.0">
+                            <children>
+                                <Label fx:id="Extra_Label" contentDisplay="CENTER" prefHeight="86.0" prefWidth="277.0" text="EXTRAS" textFill="#9c1439">
+                                    <font>
+                                        <Font name="Algerian" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="Over_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="86.0" prefWidth="251.0" text="OVER" textFill="#9c1439">
+                                    <font>
+                                        <Font name="Algerian" size="24.0" />
+                                    </font>
+                                </Label>
+                                <Label fx:id="Score_Label" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="298.0" layoutY="10.0" prefHeight="86.0" prefWidth="342.0" text="SCORE" textFill="#9c1439">
+                                    <font>
+                                        <Font name="Algerian" size="24.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </HBox>
+                    </children>
+                </VBox>
+                <Label fx:id="Team_Name_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="14.0" prefHeight="43.0" prefWidth="242.0" text="TEAM NAME" textFill="#13139c">
+                    <font>
+                        <Font name="Arial Bold" size="24.0" />
+                    </font>
+                </Label>
+            </children>
+        </AnchorPane>
+    </content>
+    <buttonTypes>
+        <ButtonType fx:constant="CLOSE" />
+    </buttonTypes>
+</DialogPane>

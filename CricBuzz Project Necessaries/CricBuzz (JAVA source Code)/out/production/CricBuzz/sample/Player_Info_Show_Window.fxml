@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="499.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Player_Info_Show_Window_Controller">
+    <children>
+        <VBox layoutX="56.0" layoutY="81.0" prefHeight="318.0" prefWidth="512.0" spacing="15.0">
+            <children>
+                <HBox prefHeight="46.0" prefWidth="308.0">
+                    <children>
+                        <Label prefHeight="46.0" prefWidth="150.0" text="PLAYER NAME :" textFill="#0a3b25">
+                            <font>
+                                <Font name="Algerian" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="Player_Name_Label" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="382.0" text="LABEL" textFill="#282626">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="308.0">
+                    <children>
+                        <Label prefHeight="46.0" prefWidth="95.0" text="COUNTRY:" textFill="#791a22">
+                            <font>
+                                <Font name="Algerian" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="Country_Label" prefHeight="46.0" prefWidth="385.0" text="LABEL" textFill="#282626">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="56.0" prefHeight="46.0" prefWidth="308.0">
+                    <children>
+                        <Label prefHeight="42.0" prefWidth="57.0" text="AGE:" textFill="#611d23">
+                            <font>
+                                <Font name="Algerian" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="Age_Label" prefHeight="46.0" prefWidth="300.0" text="LABEL" textFill="#282626">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="103.0" prefHeight="46.0" prefWidth="308.0">
+                    <children>
+                        <Label prefHeight="42.0" prefWidth="70.0" text="ROLE:" textFill="#631017">
+                            <font>
+                                <Font name="Algerian" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="Role_Label" prefHeight="46.0" prefWidth="300.0" text="LABEL" textFill="#282626">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="149.0" prefHeight="46.0" prefWidth="308.0">
+                    <children>
+                        <Label prefHeight="42.0" prefWidth="150.0" text="MATCH PLAYED:" textFill="#561117">
+                            <font>
+                                <Font name="Algerian" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="Match_Played_Label" prefHeight="46.0" prefWidth="300.0" text="LABEL" textFill="#282626">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </HBox>
+                <HBox prefHeight="39.0" prefWidth="512.0" />
+            </children>
+        </VBox>
+        <Label alignment="CENTER" layoutX="250.0" layoutY="15.0" prefHeight="38.0" prefWidth="163.0" text="PLAYER INFO" textFill="#2d1bef">
+            <font>
+                <Font name="System Italic" size="26.0" />
+            </font>
+        </Label>
+        <Button fx:id="Batting_Stats_Button" layoutX="56.0" layoutY="422.0" mnemonicParsing="false" onAction="#Batting_Stats_Button_Clicked" prefHeight="40.0" prefWidth="197.0" text="SEE BATTING STATS">
+            <font>
+                <Font name="Algerian" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="Back_Button" layoutX="569.0" layoutY="452.0" mnemonicParsing="false" onAction="#Back_Button_Clicked" prefHeight="40.0" prefWidth="102.0" text="BACK">
+            <font>
+                <Font name="Algerian" size="18.0" />
+            </font>
+        </Button>
+      <Button fx:id="Bowling_Stats_Button" layoutX="319.0" layoutY="422.0" mnemonicParsing="false" onAction="#Bowling_Stats_Button_Clicked" prefHeight="40.0" prefWidth="198.0" text="SEE BOWLING STATS">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

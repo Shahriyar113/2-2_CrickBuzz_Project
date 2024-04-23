@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<DialogPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Batting_Card_DialogBox_Controller">
+   <content>
+      <AnchorPane prefHeight="599.0" prefWidth="886.0">
+          <children>
+              <VBox layoutX="24.0" layoutY="81.0" prefHeight="518.0" prefWidth="865.0" spacing="15.0">
+                  <children>
+                      <TableView fx:id="Batting_Card_Tableview" prefHeight="418.0" prefWidth="882.0">
+                          <columns>
+                              <TableColumn fx:id="Batsman_Col" prefWidth="299.9999816417694" style="-fx-alignment: CENTER;" text="BATSMAN" />
+                              <TableColumn fx:id="Status_Col" prefWidth="172.800048828125" style="-fx-alignment: CENTER;" text="STATUS" />
+                              <TableColumn fx:id="Fours_Col" prefWidth="58.40008544921875" style="-fx-alignment: CENTER;" text="4's" />
+                              <TableColumn fx:id="Sixes_Col" minWidth="0.0" prefWidth="56.7999267578125" style="-fx-alignment: CENTER;" text="6's" />
+                        <TableColumn fx:id="Run_Col" minWidth="0.0" prefWidth="135.20001220703125" style="-fx-alignment: CENTER;" text="RUN " />
+                        <TableColumn fx:id="Bowl_Faced_Col" minWidth="0.0" prefWidth="139.99993896484375" style="-fx-alignment: CENTER;" text="BOWL FACED" />
+                          </columns>
+                          <opaqueInsets>
+                              <Insets />
+                          </opaqueInsets>
+                      </TableView>
+                  <HBox prefHeight="87.0" prefWidth="882.0">
+                     <children>
+                        <Label fx:id="Extra_Label" contentDisplay="CENTER" prefHeight="86.0" prefWidth="277.0" text="EXTRAS" textFill="#9c1439">
+                           <font>
+                              <Font name="Algerian" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Over_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="20.0" layoutY="10.0" prefHeight="86.0" prefWidth="271.0" text="OVER" textFill="#9c1439">
+                           <font>
+                              <Font name="Algerian" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Score_Label" alignment="CENTER_RIGHT" contentDisplay="CENTER" layoutX="298.0" layoutY="10.0" prefHeight="86.0" prefWidth="342.0" text="SCORE" textFill="#9c1439">
+                           <font>
+                              <Font name="Algerian" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  </children>
+              </VBox>
+              <Label fx:id="Team_Name_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="14.0" prefHeight="43.0" prefWidth="242.0" text="TEAM NAME" textFill="#13139c">
+                  <font>
+                      <Font name="Arial Bold" size="24.0" />
+                  </font>
+              </Label>
+          </children>
+      </AnchorPane>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="CLOSE" />
+   </buttonTypes>
+</DialogPane>

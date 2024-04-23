@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="250.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Admin_Login_Controller">
+    <children>
+        <Label layoutX="74.0" layoutY="63.0" text="Username" />
+        <Label layoutX="74.0" layoutY="125.0" text="Password" />
+        <TextField fx:id="userText" layoutX="169.0" layoutY="58.0" prefHeight="26.0" prefWidth="234.0" promptText="Enter your username" />
+        <PasswordField fx:id="passwordText" layoutX="169.0" layoutY="120.0" prefHeight="26.0" prefWidth="234.0" promptText="Enter your password" />
+        <ButtonBar layoutX="10.0" layoutY="193.0" prefHeight="54.0" prefWidth="518.0">
+            <buttons>
+                <Button fx:id="resetButton" mnemonicParsing="false" onAction="#resetAction" text="Reset" />
+                <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginAction" text="Login" />
+                <Button fx:id="back_button" minWidth="69.0" mnemonicParsing="false" onAction="#back_button_pressed" prefHeight="26.0" text="Back" />
+            <Button fx:id="create_an_account_button" layoutX="208.0" layoutY="17.0" minWidth="71.0" mnemonicParsing="false" onAction="#create_an_account_button_pressed" prefHeight="26.0" prefWidth="146.0" text="Create An Account" />
+            </buttons>
+        </ButtonBar>
+    </children>
+</AnchorPane>

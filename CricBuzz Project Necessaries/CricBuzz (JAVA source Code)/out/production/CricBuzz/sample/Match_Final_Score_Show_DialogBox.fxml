@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<DialogPane prefHeight="520.0" prefWidth="770.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Match_Final_Score_Show_DialogBox_Controller">
+   <content>
+      <AnchorPane prefHeight="485.0" prefWidth="769.0">
+         <children>
+            <VBox layoutX="49.0" layoutY="142.0" prefHeight="126.0" prefWidth="680.0">
+               <children>
+                  <HBox prefHeight="62.0" prefWidth="502.0">
+                     <children>
+                        <Label fx:id="Team1_Name_Label" contentDisplay="CENTER" prefHeight="41.0" prefWidth="165.0" text="TEAM1_NAME:" textFill="#171718">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Team1_Score_Label" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="164.0" text="SCORE" textFill="#2c2c2e">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Team1_Over_Label" contentDisplay="CENTER" layoutX="173.0" layoutY="10.0" prefHeight="43.0" prefWidth="178.0" text="OVER" textFill="#1f1f20">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Team1_Extras_Label" contentDisplay="CENTER" layoutX="284.0" layoutY="10.0" prefHeight="43.0" prefWidth="175.0" text="EXTRAS" textFill="#1f1f20">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="10.0" prefHeight="62.0" prefWidth="502.0">
+                     <children>
+                        <Label fx:id="Team2_Name_Label" contentDisplay="CENTER" prefHeight="43.0" prefWidth="163.0" text="TEAM2_NAME:" textFill="#171718">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Team2_Score_Label" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="164.0" text="SCORE" textFill="#2c2c2e">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Team2_Over_Label" contentDisplay="CENTER" layoutX="173.0" layoutY="10.0" prefHeight="43.0" prefWidth="180.0" text="OVER" textFill="#1f1f20">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="Team2_Extras_Label" contentDisplay="CENTER" layoutX="284.0" layoutY="10.0" prefHeight="43.0" prefWidth="94.0" text="EXTRAS" textFill="#1f1f20">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+            </VBox>
+            <Label fx:id="Tour_Name_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" layoutY="14.0" prefHeight="43.0" prefWidth="242.0" text="TOUR NAME" textFill="#13139c">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="Match_No_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="245.0" layoutY="57.0" prefHeight="43.0" prefWidth="242.0" text="MATCH NO" textFill="#9c142b">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="Result_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="53.0" layoutY="274.0" prefHeight="43.0" prefWidth="599.0" textFill="#1c1ce4">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="First_Inn_Batting_Card_Button" layoutX="30.0" layoutY="345.0" mnemonicParsing="false" onAction="#First_Inn_Batting_Card_Button_Clicked" prefHeight="34.0" prefWidth="270.0" text="1st INN. BATTING CARD">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="First_Inn_Bowling_Card_Button" layoutX="340.0" layoutY="345.0" mnemonicParsing="false" onAction="#First_Inn_Bowling_Card_Button_Clicked" prefHeight="34.0" prefWidth="295.0" text="1st INN. BOWLING CARD">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Second_Inn_Batting_Card_Button" layoutX="30.0" layoutY="400.0" mnemonicParsing="false" onAction="#Second_Inn_Batting_Card_Button_Clicked" prefHeight="34.0" prefWidth="270.0" text="2ND INN BATTING CARD">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Second_Inn_Bowling_Card_Button" layoutX="340.0" layoutY="400.0" mnemonicParsing="false" onAction="#Second_Inn_Bowling_Card_Button_Clicked" prefHeight="34.0" prefWidth="295.0" text="2nd INN BOWLING CARD">
+               <font>
+                  <Font name="Arial Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </content>
+   <buttonTypes>
+      <ButtonType fx:constant="CLOSE" />
+   </buttonTypes>
+</DialogPane>

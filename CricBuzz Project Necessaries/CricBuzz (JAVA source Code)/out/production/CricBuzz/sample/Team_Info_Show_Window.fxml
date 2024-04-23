@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="499.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Team_Info_Show_Window_Controller">
+   <children>
+      <VBox layoutX="56.0" layoutY="81.0" prefHeight="318.0" prefWidth="512.0">
+         <children>
+            <HBox prefHeight="46.0" prefWidth="308.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="135.0" text="TEAM NAME :" textFill="#eb4d58">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Team_Name_Label" layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="383.0" text="LABEL" textFill="#282626">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="46.0" prefWidth="308.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="135.0" text="HEAD COACH:" textFill="#eb4d58">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Head_Coach_Label" prefHeight="46.0" prefWidth="385.0" text="LABEL" textFill="#282626">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="56.0" prefHeight="46.0" prefWidth="308.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="170.0" text="BOARD PRESIDENT:" textFill="#eb4d58">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Board_President_Label" prefHeight="46.0" prefWidth="300.0" text="LABEL" textFill="#282626">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="103.0" prefHeight="46.0" prefWidth="308.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="114.0" text="ODI RANK:" textFill="#eb4d58">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ODI_Rank_Label" prefHeight="46.0" prefWidth="300.0" text="LABEL" textFill="#282626">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="149.0" prefHeight="46.0" prefWidth="308.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="114.0" text="T20 RANK:" textFill="#eb4d58">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="T20_Rank_Label" prefHeight="46.0" prefWidth="300.0" text="LABEL" textFill="#282626">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="149.0" prefHeight="46.0" prefWidth="308.0">
+               <children>
+                  <Label prefHeight="46.0" prefWidth="114.0" text="TEST RANK:" textFill="#eb4d58">
+                     <font>
+                        <Font name="Algerian" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="Test_Rank_Label" prefHeight="46.0" prefWidth="300.0" text="LABEL" textFill="#282626">
+                     <font>
+                        <Font name="Arial Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="39.0" prefWidth="512.0" />
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="250.0" layoutY="15.0" prefHeight="38.0" prefWidth="163.0" text="TEAM INFO" textFill="#2d1bef">
+         <font>
+            <Font name="System Italic" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="Team_Stats_Button" layoutX="56.0" layoutY="422.0" mnemonicParsing="false" onAction="#Team_Stats_Button_Clicked" prefHeight="40.0" prefWidth="175.0" text="SEE TEAM STATS">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Back_Button" layoutX="569.0" layoutY="452.0" mnemonicParsing="false" onAction="#Back_Button_Clicked" prefHeight="40.0" prefWidth="102.0" text="BACK">
+         <font>
+            <Font name="Algerian" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

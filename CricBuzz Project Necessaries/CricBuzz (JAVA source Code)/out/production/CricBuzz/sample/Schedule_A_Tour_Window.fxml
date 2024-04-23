@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="547.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Schedule_A_Tour_Window_Controller">
+   <children>
+      <VBox layoutX="38.0" layoutY="93.0" prefHeight="353.0" prefWidth="338.0" spacing="10.0">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="338.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="61.0" prefWidth="104.0" text="SET A TITLE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Tournament_Title_Textfield" layoutX="113.0" layoutY="10.0" prefHeight="54.0" prefWidth="236.0" promptText="Tournament Title" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="338.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="44.0" prefWidth="102.0" text="START DATE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="Start_Date_DatePicker" prefHeight="42.0" prefWidth="238.0" promptText="Start Date" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="75.0" prefHeight="54.0" prefWidth="338.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="44.0" prefWidth="102.0" text="END DATE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="End_Date_DatePicker" editable="false" prefHeight="42.0" prefWidth="238.0" promptText="End Date" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="54.0" prefWidth="338.0">
+               <children>
+                  <Label contentDisplay="CENTER" prefHeight="34.0" prefWidth="149.0" text="NUM OF MATCHES">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="Totat_Matches_Textfield" layoutX="113.0" layoutY="10.0" prefHeight="30.0" prefWidth="94.0" promptText="Total Matches" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Label layoutX="293.0" layoutY="23.0" prefHeight="44.0" prefWidth="248.0" text="SCHEDULE A TOUR" textFill="#572bae">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Confirm_Button" layoutX="38.0" layoutY="472.0" mnemonicParsing="false" onAction="#Confirm_Button_Clicked" prefHeight="46.0" prefWidth="110.0" text="CONFIRM">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Button>
+      <HBox layoutX="401.0" layoutY="93.0" prefHeight="54.0" prefWidth="338.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="54.0" prefWidth="139.0" text="HOST COUNTRY">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="Host_Country_ComboBox" prefHeight="41.0" prefWidth="201.0" promptText="HOST COUNTRY" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="10.0" top="10.0" />
+         </padding>
+      </HBox>
+      <Button fx:id="Back_Button" layoutX="699.0" layoutY="488.0" mnemonicParsing="false" onAction="#Back_Button_Clicked" prefHeight="46.0" prefWidth="78.0" text="BACK">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

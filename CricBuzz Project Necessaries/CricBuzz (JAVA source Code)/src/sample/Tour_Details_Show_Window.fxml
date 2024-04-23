@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="402.0" prefWidth="886.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Tour_Details_Show_Window_Controller">
+    <children>
+        <VBox layoutX="1.0" layoutY="81.0" prefHeight="251.0" prefWidth="882.0" spacing="15.0">
+            <children>
+                <TableView fx:id="Tournament_Match_List_Tableview" prefHeight="252.0" prefWidth="894.0">
+                    <columns>
+                        <TableColumn fx:id="Match_No_Col" prefWidth="222.4000244140625" style="-fx-alignment: CENTER;" text="MATCH NO" />
+                        <TableColumn fx:id="Match_Date_Col" prefWidth="204.79998779296875" style="-fx-alignment: CENTER;" text="MATCH DATE" />
+                        <TableColumn fx:id="Stadium_Col" prefWidth="275.199951171875" style="-fx-alignment: CENTER;" text="STADIUM" />
+                        <TableColumn fx:id="Status_Col" minWidth="0.0" prefWidth="178.40006103515623" style="-fx-alignment: CENTER;" text="STATUS" />
+                    </columns>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </TableView>
+            </children>
+        </VBox>
+        <Button fx:id="Back_Button" layoutX="787.0" layoutY="353.0" mnemonicParsing="false" onAction="#Back_Button_Clicked" prefHeight="30.0" prefWidth="87.0" text="BACK">
+            <font>
+                <Font name="Arial" size="18.0" />
+            </font>
+        </Button>
+        <Label fx:id="Tour_Name_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="14.0" prefHeight="43.0" prefWidth="242.0" text="TOUR NAME" textFill="#13139c">
+            <font>
+                <Font name="Arial Bold" size="24.0" />
+            </font>
+        </Label>
+      <Button fx:id="See_Result_Button" layoutX="22.0" layoutY="353.0" mnemonicParsing="false" onAction="#See_Result_Button_Clicked" prefHeight="34.0" prefWidth="166.0" text="SEE RESULT">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

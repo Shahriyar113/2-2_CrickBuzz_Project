@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="549.0" prefWidth="322.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ranking_Window_Controller">
+   <children>
+      <TableView fx:id="Ranking_TableView" layoutY="83.0" prefHeight="407.0" prefWidth="322.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="Ranking_Label" alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="14.0" prefHeight="54.0" prefWidth="194.0" text="TEST RANKING">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back_Button" layoutX="208.0" layoutY="508.0" mnemonicParsing="false" onAction="#Back_Button_Pressed" prefHeight="26.0" prefWidth="99.0" text="BACK" />
+   </children>
+</AnchorPane>

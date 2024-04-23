@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="628.0" prefWidth="611.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Viewer_Window_Controller">
+   <children>
+      <VBox layoutX="189.0" layoutY="99.0" prefHeight="483.0" prefWidth="206.0" spacing="30.0">
+         <children>
+            <Button fx:id="Browse_Matches_Button" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#Browse_Matches_Button_Clicked" prefHeight="74.0" prefWidth="206.0" text="BROWSE MATCHES">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Browse_A_Team_Button" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" onAction="#Browse_A_Team_Button_Clicked" prefHeight="74.0" prefWidth="206.0" text="BROWSE A TEAM">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Browse_A_Player_Button" layoutX="10.0" layoutY="194.0" mnemonicParsing="false" onAction="#Browse_A_Player_Button_Clicked" prefHeight="73.0" prefWidth="206.0" text="BROWSE A PLAYER">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Browse_A_Tour_Button" layoutX="10.0" layoutY="349.0" mnemonicParsing="false" onAction="#Browse_A_Tour_Button_Clicked" prefHeight="74.0" prefWidth="206.0" text="BROWSE A TOUR">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="Ranking_Button" layoutX="10.0" layoutY="286.0" mnemonicParsing="false" onAction="#Ranking_Button_Clicked" prefHeight="74.0" prefWidth="206.0" text="RANKINGS">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <Label alignment="CENTER" layoutX="128.0" layoutY="24.0" prefHeight="54.0" prefWidth="327.0" text="Welcoime To CRICBUZZ" textFill="#27167b">
+         <font>
+            <Font name="Bell MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button fx:id="Back_Button" layoutX="499.0" layoutY="582.0" mnemonicParsing="false" onAction="#Back_Button_Pressed" prefHeight="38.0" prefWidth="98.0" text="BACK">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
